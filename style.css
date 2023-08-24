@@ -1,0 +1,50 @@
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to left, #fff 0%, #f14782, #fa2365);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 50%;
+    text-align: center;
+    padding: 15px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 12px;
+}
+
+.emojis, .ratings {
+    font-size: 22px;
+}
+
+.emojis i {
+    display: none;
+}
+
+.emojis i.active {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.emojis i.active, .ratings i.active {
+    color: yellow;
+}
